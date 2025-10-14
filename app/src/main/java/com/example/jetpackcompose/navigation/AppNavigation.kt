@@ -7,6 +7,7 @@ import androidx.navigation.compose.rememberNavController
 import com.example.jetpackcompose.screens.FirtScreen
 import com.example.jetpackcompose.screens.SecondScreen
 import com.example.jetpackcompose.screens.ThirdScreen
+import com.example.jetpackcompose.screens.CatScreen
 
 
 
@@ -24,9 +25,12 @@ fun AppNavigation() {
         composable(route = AppScreens.SecondScreen.route) {
             SecondScreen(navController)
         }
-
         composable(route = AppScreens.ThirdScreen.route) {
             ThirdScreen(navController)
+        }
+
+        composable(route = AppScreens.CatScreen.route) {
+            CatScreen(navController)
         }
     }
 }
